@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.purdue.jvanauke.MainActivity" >
+
+    <!-- TODO your layout here -->
+
+    <Button
+        android:id="@+id/bu_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:gravity="center" 
+        android:minHeight="60dp"
+        android:minWidth="100dp"
+        android:onClick="onSubmit"
+        android:padding="@dimen/padding"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/name"
+        android:textColor="#ff000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtTxtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblName"
+        android:layout_alignBottom="@id/lblName"
+        android:layout_toEndOf="@id/lblName"
+        android:layout_toRightOf="@id/lblName"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/namePrompt" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblPrefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblName"
+        android:layout_alignStart="@id/lblName"
+        android:layout_below="@id/edtTxtName"
+        android:layout_marginTop="20dp"
+        android:text="@string/prefs"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radGrpType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edtTxtName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@id/lblPrefs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/lblPrefs"
+        android:layout_marginTop="16dp" >
+
+        <RadioButton
+            android:id="@+id/radReq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/requester" />
+
+        <RadioButton
+            android:id="@+id/radVol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volunteer" />
+
+        <RadioButton
+            android:id="@+id/radNoPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noPref" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblPrefs"
+        android:layout_alignStart="@id/lblPrefs"
+        android:layout_below="@+id/lblFrom"
+        android:entries="@array/arrayFrom" />
+
+    <Spinner
+        android:id="@+id/spinTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/spinFrom"
+        android:layout_alignStart="@id/spinFrom"
+        android:layout_below="@+id/lblTo"
+        android:entries="@array/arrayTo" />
+
+    <TextView
+        android:id="@+id/lblFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblName"
+        android:layout_alignStart="@id/lblName"
+        android:layout_below="@id/radGrpType"
+        android:layout_marginTop="20dp"
+        android:text="@string/from" />
+
+    <TextView
+        android:id="@+id/lblTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblName"
+        android:layout_alignStart="@id/lblName"
+        android:layout_below="@id/spinFrom"
+        android:layout_marginTop="20dp"
+        android:text="@string/to" />
+
+</RelativeLayout>

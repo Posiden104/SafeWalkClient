@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeWalk</string>
+    <string name="server">Server</string>
+    <string name="client">Client</string>
+    <string name="submit">Submit</string>
+    <string name="match">Match</string>
+    <string name="start_over">Start Over</string>
+    <string name="default_host">10.184.128.1</string>
+    <string name="default_port">8888</string>
+    <string name="default_command">:FAKE_COMMAND</string>
+    <string name="host">Host</string>
+    <string name="port">Port</string>
+    <string name="name">Name</string>
+    <string name="namePrompt">Enter your name</string>
+    <string name="prefs">Preferences</string>    
+    <string name="volunteer">I am a volunteer. Don\'t match me with another volunteer</string>
+    <string name="requester">I am a requester. Match me with volunteers only.</string>
+    <string name="noPref">I have no preference being a requester or a volunteer.</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="matchlbl">Partner\n \nFrom\n \nTo</string>
+    <string name="congrats">Congratulations\! A match has\nbeen found.</string>
+    
+    <string-array name="arrayFrom">
+        <item>CL 50 - Class of 1950 Lecture Hall</item>
+        <item>EE - Electrical Engineering Building</item>
+        <item>LWSN - Lawson Computer Science Building</item>
+		<item>PMU - Purdue Memorial Union</item>        
+		<item>PUSH - Purdue University Student Health Center</item>
+    </string-array>
+
+    <string-array name="arrayTo">
+        <item>CL 50 - Class of 1950 Lecture Hall</item>
+        <item>EE - Electrical Engineering Building</item>
+        <item>LWSN - Lawson Computer Science Building</item>
+		<item>PMU - Purdue Memorial Union</item>        
+		<item>PUSH - Purdue University Student Health Center</item>
+		<item>* - Any one of the locations above</item>
+        </string-array>
+        
+</resources>
